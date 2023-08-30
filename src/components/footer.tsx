@@ -7,12 +7,11 @@ import {
 } from "@/constants/data";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/components/Button";
 
 const Footer = () => {
   return (
     <footer className="max-container bg-black w-full">
-      <div className="flex justify-between items-start gap-20 mt-10 flex-wrap max-lg:flex-col">
+      <div className="flex justify-between items-start gap-20 my-10 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
           <Link href="/">
             <Image
@@ -58,14 +57,6 @@ const Footer = () => {
 
         <div className="lg:max-w-[30%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
           <div className="flex max-sm:justify-end items-center max-sm:w-full">
-            <Button
-              label="Submit"
-              fullWidth
-              iconURL={undefined}
-              backgroundColor={undefined}
-              textColor={undefined}
-              borderColor={undefined}
-            />
           </div>
         </div>
       </div>
