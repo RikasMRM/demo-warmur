@@ -9,6 +9,8 @@ import facebook from "../../public/facebook.svg";
 import instagram from "../../public/instagram.svg";
 import twitter from "../../public/twitter.svg";
 import copyrightSign from "../../public/copyright-sign.svg";
+import iphone from "../../public/iPhone-12-Mockup.png";
+import homeimg from "../../public/home.jpg";
 
 export const navLinks = [
   { href: "", label: "Home" },
@@ -27,35 +29,36 @@ export {
   instagram,
   twitter,
   copyrightSign,
+  iphone,
+  homeimg,
 };
 
 export const footerLinks = [
   {
     title: "Home",
     links: [
-      { name: "Home", link: "/" },
-      { name: "Get warmur", link: "/" },
-      { name: "Products", link: "/" },
-      { name: "Our Calculator", link: "/" },
-      ,
+      { title: "Home", url: "/" },
+      { title: "Get Warmur", url: "/" },
+      { title: "Products", url: "/" },
+      { title: "Our Calculator", url: "/" },
     ],
   },
   {
     title: "About",
     links: [
-      { name: "About", link: "/" },
-      { name: "The Team", link: "/" },
-      { name: "Installation", link: "/" },
-      { name: "Contact", link: "/" },
+      { title: "About", url: "/" },
+      { title: "The Team", url: "/" },
+      { title: "Installation", url: "/" },
+      { title: "Contact", url: "/" },
     ],
   },
   {
     title: "FAQs",
     links: [
-      { name: "FAQs", link: "/" },
-      { name: "Cookies", link: "/" },
-      { name: "Privacy Policy", link: "/" },
-      { name: "T&Cs", link: "/" },
+      { title: "FAQs", url: "/" },
+      { title: "Cookies", url: "/" },
+      { title: "Privacy", url: "/" },
+      { title: "T&Cs", url: "/" },
     ],
   },
 ];
