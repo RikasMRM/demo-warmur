@@ -1,13 +1,26 @@
 import React from "react";
 import SectionHeading from "./section-heading";
+import Image from "next/image";
+
+import { homeimg } from "@/constants/data";
 
 export default function Illustration() {
-  return <>
-    <div className="my-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28">
+  return (
+    <>
+      <div className="text-center w-full bg-gray-300">
         <SectionHeading>illustrate</SectionHeading>
-        <div className="my-3">
-          3D Home illustration
+        <div>
+          <div
+            className="relative flex justify-center mb-8"
+            data-aos="zoom-y-out"
+            data-aos-delay="450"
+          >
+            <div className="flex flex-col justify-center">
+              <Image className="" alt="main background image" src={homeimg} />
+            </div>
+          </div>
         </div>
       </div>
-  </>;
+    </>
+  );
 }

@@ -3,11 +3,11 @@ import Image from "next/image";
 
 import { home } from "@/constants/data";
 
-import Subscribe from "@/components/subscribe";
+import Subscribe from "@/components/atoms/subscribe";
 
 export default function into() {
   return (
-    <div className="relative h-screen w-screen">
+    <div className="relative h-screen w-full">
       <Image
         className="absolute inset-0 w-full h-full object-cover mix-blend-multiply filter brightness-50"
         alt="main background image"

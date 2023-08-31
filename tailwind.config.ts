@@ -13,14 +13,23 @@ const config: Config = {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        colors: {
-          palette: {
-            dark: "#2a3442",
-            blue: " #0c2233",
-            hash: "#ECEEFF",
-            purple: "#6D28D9",
-            orange: "#FF6452",
-          },
+        "mate-black": "#2B2C35",
+        "primary-blue": {
+          DEFAULT: "#0c2233",
+          900: "#2a3442",
+        },
+        "primary-orange": "#FF6452",
+        "secondary-orange": "#f79761",
+        gray: {
+          100: '#FBFBFB',
+          200: '#EAEAEA',
+          300: '#e0ddd9',
+          400: '#999999',
+          500: '#7F7F7F',
+          600: '#666666',
+          700: '#4C4C4C',
+          800: '#333333',
+          900: '#191919',
         },
       },
       boxShadow: {

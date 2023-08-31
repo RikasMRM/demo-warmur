@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-
 const strapiURL = process.env.STRAPI_URL;
 
 export default function BlogPosts() {
