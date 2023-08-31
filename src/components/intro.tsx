@@ -5,7 +5,7 @@ import { home } from "@/constants/data";
 
 import Subscribe from "@/components/subscribe";
 
-export default function Intro() {
+export default function into() {
   return (
     <div className="relative h-screen w-screen">
       <Image

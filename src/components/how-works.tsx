@@ -1,13 +1,10 @@
-"use client";
-
 import React from "react";
 import SectionHeading from "./section-heading";
 
-export default function About() {
-  return (
-    <>
-      <div className="my-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28">
-        <SectionHeading>What we do</SectionHeading>
+export default function HowWorks() {
+  return <>
+    <div className="my-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28">
+        <SectionHeading>How it works</SectionHeading>
         <div className="my-3">
           <span className="font-medium">Warmur</span> is a new renewable energy
           calculator, due to be released late in October 2023. Our mission is to
@@ -22,6 +19,5 @@ export default function About() {
           But calculators abound, you say! There are several calculators online
         </div>
       </div>
-    </>
-  );
+  </>;
 }

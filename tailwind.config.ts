@@ -15,9 +15,10 @@ const config: Config = {
       colors: {
         colors: {
           palette: {
-            blue: "#F5F3FF",
+            dark: "#2a3442",
+            blue: " #0c2233",
             hash: "#ECEEFF",
-            dark: "#6D28D9",
+            purple: "#6D28D9",
             orange: "#FF6452",
           },
         },

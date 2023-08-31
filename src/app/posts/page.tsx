@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeading from "@/components/section-heading";
-import BlogPosts from "@/components/blogs";
+import BlogPosts from "@/components/templates/blogs";
 
 export default async function Blogs() {
   return (
