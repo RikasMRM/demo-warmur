@@ -52,7 +52,7 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <div className="lg:max-w-[30%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
+          <div className="lg:max-w-[30%] w-full h-[20%] flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
             <div className="flex max-sm:justify-end items-center max-sm:w-full">Enter your email</div>
           </div>
         </div>
