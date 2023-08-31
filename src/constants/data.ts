@@ -13,7 +13,7 @@ import copyrightSign from "../../public/copyright-sign.svg";
 export const navLinks = [
   { href: "", label: "Home" },
   { href: "calculator", label: "Calculator" },
-  { href: "blog", label: "Blogs" },
+  { href: "posts", label: "Posts" },
 ];
 
 // Images
