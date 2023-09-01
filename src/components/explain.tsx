@@ -1,38 +1,121 @@
+"use client";
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import SectionHeading from "./section-heading";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+import { Navigation } from "swiper/modules";
+
+import { Heat, Solar } from "@/constants/data";
 
 export default function Explain() {
-  return <>
-    <div className="text-center w-full bg-primary-orange">
-        <SectionHeading>Explain</SectionHeading>
-        <div className="my-3">
-        Explain
-        </div>
-        <section className="relative">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <div className="py-24 md:py-36">
-            <h1 className="mb-5 text-6xl Avenir font-semibold text-gray-900">
-              Subscribe to our newsletter
-            </h1>
-            <h1 className="mb-9 text-2xl font-semibold text-gray-600">
-              Enter your email address and get our newsletters straight away.
-            </h1>
-            <input
-              placeholder="jack@example.com"
-              name="email"
-              type="email"
-              autoComplete="email"
-              className="border border-gray-600 w-1/4 pr-2 pl-2 py-3 mt-2 rounded-md text-gray-800 font-semibold hover:border-gray-900"
-            ></input>{" "}
-            <a
-              className="inline-flex items-center px-14 py-3 mt-2 ml-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
-              href="/"
-            >
-              <span className="justify-center">Subscribe</span>
-            </a>
+  return (
+    <>
+      <div className="text-center w-full bg-orange-400 py-10">
+        <div className=" relative">
+          <div className="flex flex-col justify-center items-start max-w-7xl mx-auto">
+            <p>Want to dive deeper</p>
+            <h1 className=" text-4xl">Let's explain more</h1>
           </div>
+
+          <Swiper
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiper my-10"
+            slidesPerView={1}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+            spaceBetween={40}
+          >
+            <SwiperSlide>
+              <div className="w-full h-[400px] relative">
+                <Image src={Heat} fill alt="heat" />
+                <div className="w-full h-full bg-black opacity-50 absolute"></div>
+                <div className="absolute bottom-5 w-full px-4">
+                  <div className="flex flex-row justify-between">
+                    <h4 className="text-white">Heat Pumps</h4>
+                    <button className="text-black px-3 bg-white rounded-2xl">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-full h-[400px] relative mx-10">
+                <Image src={Solar} fill alt="heat" />
+                <div className="w-full h-full bg-black opacity-50 absolute"></div>
+                <div className="absolute bottom-5 w-full px-4">
+                  <div className="flex flex-row justify-between">
+                    <h4 className="text-white">Heat Pumps</h4>
+                    <button className="text-black px-3 bg-white rounded-2xl">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-full h-[400px] relative">
+                <Image src={Solar} fill alt="heat" />
+                <div className="w-full h-full bg-black opacity-50 absolute"></div>
+                <div className="absolute bottom-5 w-full px-4">
+                  <div className="flex flex-row justify-between">
+                    <h4 className="text-white">Heat Pumps</h4>
+                    <button className="text-black px-3 bg-white rounded-2xl">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-full h-[400px] relative">
+                <Image src={Heat} fill alt="heat" />
+                <div className="w-full h-full bg-black opacity-50 absolute"></div>
+                <div className="absolute bottom-5 w-full px-4">
+                  <div className="flex flex-row justify-between">
+                    <h4 className="text-white">Heat Pumps</h4>
+                    <button className="text-black px-3 bg-white rounded-2xl">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-full h-[400px] relative">
+                <Image src={Solar} fill alt="heat" />
+                <div className="w-full h-full bg-black opacity-50 absolute"></div>
+                <div className="absolute bottom-5 w-full px-4">
+                  <div className="flex flex-row justify-between">
+                    <h4 className="text-white">Heat Pumps</h4>
+                    <button className="text-black px-3 bg-white rounded-2xl">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
-      </section>
       </div>
-  </>;
+    </>
+  );
 }
