@@ -34,9 +34,6 @@ html.dark {
   padding: 25px !important;
 }
 
-.mySwiper .swiper-wrapper {
-  width: 50%
-}
 .mySwiper .swiper-button-prev::after {
   font-size: 20px !important;
 }

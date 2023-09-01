@@ -58,26 +58,12 @@ export default function Explain() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="w-full h-[400px] relative mx-10">
-                <Image src={Solar} fill alt="heat" />
-                <div className="w-full h-full bg-black opacity-50 absolute"></div>
-                <div className="absolute bottom-5 w-full px-4">
-                  <div className="flex flex-row justify-between">
-                    <h4 className="text-white">Heat Pumps</h4>
-                    <button className="text-black px-3 bg-white rounded-2xl">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
               <div className="w-full h-[400px] relative">
                 <Image src={Solar} fill alt="heat" />
                 <div className="w-full h-full bg-black opacity-50 absolute"></div>
                 <div className="absolute bottom-5 w-full px-4">
                   <div className="flex flex-row justify-between">
-                    <h4 className="text-white">Heat Pumps</h4>
+                    <h4 className="text-white">Solar</h4>
                     <button className="text-black px-3 bg-white rounded-2xl">
                       Learn More
                     </button>
@@ -102,6 +88,20 @@ export default function Explain() {
             <SwiperSlide>
               <div className="w-full h-[400px] relative">
                 <Image src={Solar} fill alt="heat" />
+                <div className="w-full h-full bg-black opacity-50 absolute"></div>
+                <div className="absolute bottom-5 w-full px-4">
+                  <div className="flex flex-row justify-between">
+                    <h4 className="text-white">Solar</h4>
+                    <button className="text-black px-3 bg-white rounded-2xl">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-full h-[400px] relative">
+                <Image src={Heat} fill alt="heat" />
                 <div className="w-full h-full bg-black opacity-50 absolute"></div>
                 <div className="absolute bottom-5 w-full px-4">
                   <div className="flex flex-row justify-between">
