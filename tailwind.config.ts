@@ -9,15 +9,28 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        palanquin: ["Palanquin", "sans-serif"],
+        primary: ["Poppins"],
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        primary: "#ECEEFF",
-        "coral-red": "#FF6452",
-        "slate-gray": "#6D6D6D",
-        "pale-blue": "#F5F6FF",
-        "white-400": "rgba(255, 255, 255, 0.80)",
+        "mate-black": "#2B2C35",
+        "primary-blue": {
+          DEFAULT: "#0c2233",
+          900: "#2a3442",
+        },
+        "primary-orange": "#FF6452",
+        "secondary-orange": "#f79761",
+        gray: {
+          100: '#FBFBFB',
+          200: '#EAEAEA',
+          300: '#e0ddd9',
+          400: '#999999',
+          500: '#7F7F7F',
+          600: '#666666',
+          700: '#4C4C4C',
+          800: '#333333',
+          900: '#191919',
+        },
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
