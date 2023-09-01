@@ -2,6 +2,14 @@ import React from "react";
 
 import warmurLogo from "../../public/warmur-logo.png";
 import logo from "../../public/logo.png";
+import Understanding from "../../public/understanding.jpeg";
+import Whatwedo from "../../public/whatwedo.jpeg";
+import Digit from "../../public/digit.jpeg";
+import Graph from "../../public/graph.jpeg";
+import Dog from "../../public/dog.jpeg";
+import BoldMan from "../../public/boldman.jpeg";
+import Heat from "../../public/heat.jpeg";
+import Solar from "../../public/solar.jpeg";
 import menu from "../../public/hamburger.svg";
 import close from "../../public/close.svg";
 import home from "../../public/home-screen.jpg";
@@ -31,6 +39,14 @@ export {
   copyrightSign,
   iphone,
   homeimg,
+  Understanding,
+  Whatwedo,
+  Digit,
+  BoldMan,
+  Graph,
+  Dog,
+  Heat,
+  Solar,
 };
 
 export const footerLinks = [

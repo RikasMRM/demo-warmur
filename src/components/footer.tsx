@@ -11,7 +11,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="flex flex-col text-white w-full bg-primary-blue">
-      <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
+      <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10 items-center">
         <div className="flex flex-col justify-start items-start gap-6">
           <Image
             src={logo}
@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             </div>
           ))}
-          <div className="flex items-center gap-5 mt-8">
+          <div className="flex items-end gap-5 mt-8">
             {socialMedia.map((icon) => (
               <div
                 className="flex justify-center items-center w-8 h-8 bg-white rounded-full"
@@ -52,9 +52,25 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <div className="lg:max-w-[30%] w-full h-[20%] flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
-            <div className="flex max-sm:justify-end items-center max-sm:w-full">Enter your email</div>
-          </div>
+
+          <form className=" font-secondary flex flex-col w-full max-w-lg gap-3 justify-end items-start">
+            <p className=" text-orange-500">Newsletter sign-up</p>
+            <div className="relative flex justify-center items-center">
+              <input
+                className="relative bg-primary-blue px-10 py-3  border border-gray-300 rounded-3xl w-[400px] FF6452
+            focus:outline-none focus:ring-1 focus:ring-red-500"
+                required
+                placeholder="Enter your postcode"
+              />
+              <button
+                type="submit"
+                className={`absolute right-2 py-1 px-4 bg-orange-500 hover:bg-red-700 text-white text-sm sm:text-base font-semibold rounded-3xl border border-transparent 
+        focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500`}
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>

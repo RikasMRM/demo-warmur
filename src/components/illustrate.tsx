@@ -8,7 +8,7 @@ export default function Illustration() {
   return (
     <>
       <div className="text-center w-full bg-gray-300">
-        <SectionHeading>illustrate</SectionHeading>
+        {/* <SectionHeading>illustrate</SectionHeading> */}
         <div>
           <div
             className="relative flex justify-center mb-8"
