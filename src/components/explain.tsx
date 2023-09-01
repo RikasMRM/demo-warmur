@@ -58,8 +58,8 @@ export default function Explain() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="w-full h-[400px] relative">
-                <Image src={Heat} fill alt="heat" />
+              <div className="w-full h-[400px] relative mx-10">
+                <Image src={Solar} fill alt="heat" />
                 <div className="w-full h-full bg-black opacity-50 absolute"></div>
                 <div className="absolute bottom-5 w-full px-4">
                   <div className="flex flex-row justify-between">
